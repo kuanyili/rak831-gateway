@@ -11,7 +11,7 @@ fi
 # Pick frequency plan
 # See [Frequency plan and regulations by country](https://www.thethingsnetwork.org/wiki/LoRaWAN/Frequencies/By-Country)
 # and [The Things Network Master Gateway Configurations](https://github.com/TheThingsNetwork/gateway-conf)
-PS3="Please pick your frequency plan: "
+PS3="Please enter your frequency plan (number): "
 FREQUENCY_PLANS=("EU" "US" "AU" "AS1" "AS2" "KR" "IN" "CN")
 select FREQUENCY_PLAN in "${FREQUENCY_PLANS[@]}";
 do
