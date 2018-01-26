@@ -26,27 +26,26 @@ done
 
 # Create ttn group if it isn't already there
 if ! getent group ttn >/dev/null; then
-        # Add system group: ttn.
-        addgroup --system ttn >/dev/null
+    # Add system group: ttn
+    addgroup --system ttn >/dev/null
 fi
 
 # Create ttn user if it isn't already there
 if ! getent passwd ttn >/dev/null; then
-        # Add system user: ttn.
-        adduser \
-          --system \
-          --disabled-login \
-          --ingroup ttn \
-          --no-create-home \
-          --home /nonexistent \
-          --gecos "The Things Network Gateway" \
-          --shell /bin/false \
-          ttn >/dev/null
+    # Add system user: ttn
+    adduser \
+        --system \
+        --disabled-login \
+        --ingroup ttn \
+        --no-create-home \
+        --home /nonexistent \
+        --gecos "The Things Network Gateway" \
+        --shell /bin/false \
+        ttn >/dev/null
+    # Add ttn user to supplementary groups so it can
+    # reset and communicate with concentrator board
+    usermod --groups gpio,spi ttn
 fi
-
-# Add ttn user to supplementary groups so it can
-# reset and communicate with concentrator board
-usermod --groups gpio,spi ttn
 
 # Create install target directory
 DESTDIR="/opt/ttn-gateway"
