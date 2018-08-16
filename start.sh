@@ -5,7 +5,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Reset RAK831 concentrator board
 # Physical pin 11 = BCM pin 17
 # See [Raspberry Pi GPIO pinout](https://pinout.xyz/)
-# and [wiring instructions](http://docs.rakwireless.com/en/RAK831%20LoRa%20Gateway/Application%20Notes/interface%20panel%20wiring%20instructions.pdf)
+# and [wiring instructions](http://docs.rakwireless.com/en/LoRa/RAK831-Lora-Gateway/Application-Notes/Interface-Panel-Wiring-Instructions.pdf)
 SX1301_RESET_BCM_PIN=17
 $SCRIPT_DIR/reset_lgw.sh start $SX1301_RESET_BCM_PIN
 $SCRIPT_DIR/reset_lgw.sh stop $SX1301_RESET_BCM_PIN

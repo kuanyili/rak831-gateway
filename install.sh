@@ -9,7 +9,7 @@ if [ $UID != 0 ]; then
 fi
 
 # Pick frequency plan
-# See [Frequency plan and regulations by country](https://www.thethingsnetwork.org/wiki/LoRaWAN/Frequencies/By-Country)
+# See [Frequency plan and regulations by country](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html)
 # and [The Things Network Master Gateway Configurations](https://github.com/TheThingsNetwork/gateway-conf)
 PS3="Please enter your frequency plan (number): "
 FREQUENCY_PLANS=("EU" "US" "AU" "AS1" "AS2" "KR" "IN" "CN")

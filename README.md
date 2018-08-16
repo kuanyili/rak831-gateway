@@ -2,7 +2,7 @@
 
 Reference setup for [The Things Network](https://www.thethingsnetwork.org/) gateways based on
 
-- Hardware: Raspberry Pi with [RAK831](http://www.rakwireless.com/en/WisKeyOSH/RAK831) concentrator connected through [adapter board](http://docs.rakwireless.com/en/RAK831%20LoRa%20Gateway/Application%20Notes/interface%20panel%20installation%20instructions.pdf).
+- Hardware: Raspberry Pi with [RAK831](http://www.rakwireless.com/en/WisKeyOSH/RAK831) concentrator connected through [adapter board](http://docs.rakwireless.com/en/LoRa/RAK831-Lora-Gateway/Application-Notes/Interface-Panel-Installation-Instructions.pdf).
 - Software: Semtech [gateway driver](https://github.com/Lora-net/lora_gateway) and [packet forwarder](https://github.com/Lora-net/packet_forwarder)
 - Configuration: [The Things Network Master Gateway Configurations](https://github.com/TheThingsNetwork/gateway-conf)
 
