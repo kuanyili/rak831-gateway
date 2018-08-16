@@ -12,7 +12,7 @@ fi
 # See [Frequency plan and regulations by country](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html)
 # and [The Things Network Master Gateway Configurations](https://github.com/TheThingsNetwork/gateway-conf)
 PS3="Please enter your frequency plan (number): "
-FREQUENCY_PLANS=("EU" "US" "AU" "AS1" "AS2" "KR" "IN" "CN")
+FREQUENCY_PLANS=("EU" "US" "AU" "AS1" "AS2" "KR" "IN" "CN" "RU")
 select FREQUENCY_PLAN in "${FREQUENCY_PLANS[@]}";
 do
     if [ ! -z "$FREQUENCY_PLAN" ]; then
