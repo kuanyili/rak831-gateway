@@ -23,9 +23,9 @@ Reference setup for [The Things Network](https://www.thethingsnetwork.org/) gate
 
 - Make sure you have an updated installation and install `git`:
 
-        $ sudo apt-get update
-        $ sudo apt-get upgrade
-        $ sudo apt-get install git
+        $ sudo apt update
+        $ sudo apt dist-upgrade
+        $ sudo apt install git
 
 - Clone the installer and start the installation
 
