@@ -33,6 +33,10 @@ Reference setup for [The Things Network](https://www.thethingsnetwork.org/) gate
         $ cd ~/rak831-gateway
         $ sudo ./install.sh
 
+- Register gateway [via Semtech UDP packet forwarder](https://www.thethingsnetwork.org/docs/gateways/registration.html#via-semtech-udp-packet-forwarder)
+
+    - Gateway's EUI can be found in `/opt/ttn-gateway/conf/local_conf.json`
+
 ## Update
 
 If you have a running gateway and want to update, simply run the installer again:
