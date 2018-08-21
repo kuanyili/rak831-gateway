@@ -37,6 +37,6 @@ Reference setup for [The Things Network](https://www.thethingsnetwork.org/) gate
 
 If you have a running gateway and want to update, simply run the installer again:
 
-        $ cd ~/rak831-gateway
-        $ git pull
-        $ sudo ./install.sh
+    $ cd ~/rak831-gateway
+    $ git pull
+    $ sudo ./install.sh
