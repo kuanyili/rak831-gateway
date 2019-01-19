@@ -2,15 +2,15 @@
 
 Reference setup for [The Things Network](https://www.thethingsnetwork.org/) gateways based on
 
-- Hardware: Raspberry Pi with [RAK831](http://www.rakwireless.com/en/WisKeyOSH/RAK831) concentrator connected through [adapter board](http://docs.rakwireless.com/en/LoRa/RAK831-Lora-Gateway/Application-Notes/Interface-Panel-Installation-Instructions.pdf).
+- Hardware: Raspberry Pi with [RAK831](http://www.rakwireless.com/en/WisKeyOSH/RAK831) concentrator connected through [adapter board](http://docs.rakwireless.com/en/LoRa/RAK831-LoRa-Gateway/Application-Notes/Interface-Panel-Installation-Instructions.pdf).
 - Software: Semtech [gateway driver](https://github.com/Lora-net/lora_gateway) and [packet forwarder](https://github.com/Lora-net/packet_forwarder)
 - Configuration: [The Things Network Master Gateway Configurations](https://github.com/TheThingsNetwork/gateway-conf)
 
 ## Setup based on Raspbian image
 
 - Download [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/)
-- Follow the [installation instruction](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) to create the SD card
-- [Enable one-time SSH](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)
+- Follow the [installation instruction](https://www.raspberrypi.org/documentation/installation/installing-images/) to create the SD card
+- [Enable SSH on a headless Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 - Use `raspi-config` utility to
 
         $ sudo raspi-config
