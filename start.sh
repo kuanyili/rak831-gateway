@@ -14,4 +14,4 @@ $SCRIPT_DIR/reset_lgw.sh stop $SX1301_RESET_BCM_PIN
 $SCRIPT_DIR/update_gwid.sh local_conf.json
 
 # Start up LoRa packet forwarder
-$SCRIPT_DIR/lora_pkt_fwd
+exec $SCRIPT_DIR/lora_pkt_fwd
